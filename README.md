@@ -1,9 +1,11 @@
+[![Build Status](https://dev.azure.com/soonil/soonil/_apis/build/status/lazyrainynight.ContosoAir?branchName=master)](https://dev.azure.com/soonil/soonil/_build/latest?definitionId=1&branchName=master)
+
 # This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
 
 
 # Microsoft.Github CI Demo
 
-Demo website application for Contoso Air.  
+Demo website application for Contoso Air.
 Runs a nodejs server (Express v4.16) that stores customer booked flights in a CosmosDb database.
 
 ## Requirements
@@ -13,7 +15,7 @@ Runs a nodejs server (Express v4.16) that stores customer booked flights in a Co
 
 ## Local Environment Setup
 
-This project uses ES6, and has been tested with nodejs v8.9.4  
+This project uses ES6, and has been tested with nodejs v8.9.4
 There is almost no front-end logic. Still, the application uses webpack to compile sass styles and bundle third parties js files. If you want to modify any front logic or style run `npm run local:build`.
 
 In order to launch a local server on port 3000 (can be modified with environment variable PORT) run:
@@ -40,7 +42,7 @@ p_comosdb_name | database specific resource name | `db`
 
 > e.g. previous parameter examples will create resources `contoso-air-db-dev` and `contoso-air-db-dev`.
 
-Then you run the ARM template with the following commands ([Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) required): 
+Then you run the ARM template with the following commands ([Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) required):
 
 ```bash
 cd deployment
